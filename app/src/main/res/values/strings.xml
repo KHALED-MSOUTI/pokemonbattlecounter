@@ -1,0 +1,123 @@
+<resources>
+
+    <string name="app_name">Pokemon Battle Counter</string>
+
+    <string name="choosePokemon">Every player choose a Pokémon\nto start the battle !</string>
+    <string name="startWarning">Every player should select a Pokemon to start the battle</string>
+    <string name="fight">Fight!</string>
+
+    <string name="hp">HP</string>
+
+    <string name="critical">Criticat hit!\n</string>
+    <string name="immunity">It doesn\'t affect!\n</string>
+    <string name="resistance">It is not very effective…\n</string>
+    <string name="weakness">It\'s super effective!\n</string>
+    <string name="inflicted">&#160;inflicted&#160;</string>
+    <string name="damages">&#160;damages to&#160;</string>
+
+    <string name="back">Back to Pokemons selection</string>
+    <string name="congratulations">Congratulations!\n</string>
+    <string name="redWon">&#160;is defeated. \n Red won the battle!</string>
+    <string name="blueWon">&#160;is defeated. \n Blue won the battle!</string>
+
+    <!-- Pokemon characteristics -->
+    <string-array name="mewtwo">
+        <!-- Stats -->
+        <item>Mewtwo</item> <!-- Name -->
+        <item>Psychic</item> <!-- Type -->
+        <item>106</item> <!-- HP -->
+        <item>154</item> <!-- (Special) Attack -->
+        <item>90</item> <!-- (Special) Defense -->
+        <!-- First Attack -->
+        <item>Psyko</item> <!-- Attack name -->
+        <item>Psychic</item> <!-- Type -->
+        <item>90</item> <!-- Power -->
+        <!-- Second Attack -->
+        <item>Shadow Ball</item>
+        <item>Ghost</item>
+        <item>80</item>
+        <!-- Third Attack -->
+        <item>Aura Sphere</item>
+        <item>Fight</item>
+        <item>80</item>
+        <!-- Fourth Attack -->
+        <item>Iron Tail</item>
+        <item>Steel</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="zoroark">
+        <!-- Stats -->
+        <item>Zoroark</item>
+        <item>Dark</item>
+        <item>120</item> <!--Too weak so I multiplied it's HP by 2-->
+        <item>120</item>
+        <item>60</item>
+        <!-- First Attack -->
+        <item>Dark Pulse</item>
+        <item>Dark</item>
+        <item>80</item>
+        <!-- Second Attack -->
+        <item>Shadow Ball</item>
+        <item>Ghost</item>
+        <item>80</item>
+        <!-- Third Attack -->
+        <item>Frustration</item>
+        <item>Normal</item>
+        <item>100</item>
+        <!-- Fourth Attack -->
+        <item>Extrasensory</item>
+        <item>Psychic</item>
+        <item>80</item>
+    </string-array>
+
+    <string-array name="sylveon">
+        <!-- Stats -->
+        <item>Sylveon</item>
+        <item>Fairy</item>
+        <item>95</item>
+        <item>110</item>
+        <item>130</item>
+        <!-- First Attack -->
+        <item>Moonblast</item>
+        <item>Fairy</item>
+        <item>95</item>
+        <!-- Second Attack -->
+        <item>Return</item>
+        <item>Normal</item>
+        <item>100</item>
+        <!-- Third Attack -->
+        <item>Psyshock</item>
+        <item>Psychic</item>
+        <item>80</item>
+        <!-- Fourth Attack -->
+        <item>Shadow Ball</item>
+        <item>Ghost</item>
+        <item>80</item>
+    </string-array>
+
+    <string-array name="gengar">
+        <!-- Stats -->
+        <item>Gengar</item>
+        <item>Poison</item>
+        <item>100</item> <!-- Added 40 HP -->
+        <item>130</item>
+        <item>75</item>
+        <!-- First Attack -->
+        <item>Shadow Ball</item>
+        <item>Ghost</item>
+        <item>80</item>
+        <!-- Second Attack -->
+        <item>Sludge Bomb</item>
+        <item>Poison</item>
+        <item>90</item>
+        <!-- Third Attack -->
+        <item>Focus Blast</item>
+        <item>Fight</item>
+        <item>120</item>
+        <!-- Fourth Attack -->
+        <item>Dark Pulse</item>
+        <item>Dark</item>
+        <item>80</item>
+    </string-array>
+</resources>
