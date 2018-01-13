@@ -4,7 +4,7 @@
 
     <string name="choosePokemon">Every player choose a Pokémon\nto start the battle !</string>
     <string name="startWarning">Every player should select a Pokemon to start the battle</string>
-    <string name="fight">Fight!</string>
+    <string name="letsFight">Fight!</string>
 
     <string name="hp">HP</string>
 
@@ -19,6 +19,42 @@
     <string name="congratulations">Congratulations!\n</string>
     <string name="redWon">&#160;is defeated. \n Red won the battle!</string>
     <string name="blueWon">&#160;is defeated. \n Blue won the battle!</string>
+
+    <!-- Types -->
+    <string name="psychic">Psychic</string>
+    <string name="dark">Dark</string>
+    <string name="fairy">Fairy</string>
+    <string name="poison">Poison</string>
+    <string name="normal">Normal</string>
+    <string name="fight">Fight</string>
+    <string name="steel">Steel</string>
+    <string name="ghost">Ghost</string>
+
+    <!-- Content description -->
+    <string name="redMewtwo">Button to choose Mewtwo for the Red player.</string>
+    <string name="redZoroark">Button to choose Zoroark for the Red player.</string>
+    <string name="redSylveon">Button to choose Sylveon for the Red player.</string>
+    <string name="redGengar">Button to choose Gengar for the Red player.</string>
+
+    <string name="blueMewtwo">Button to choose Mewtwo for the Blue player.</string>
+    <string name="blueZoroark">Button to choose Zoroark for the Blue player.</string>
+    <string name="blueSylveon">Button to choose Sylveon for the Blue player.</string>
+    <string name="blueGengar">Button to choose Gengar for the Blue player.</string>
+
+    <string name="startButton">Button to start the battle. Every player must have selected a Pokemon.</string>
+
+    <string name="redPokemon">Pokemon of the Red player.</string>
+    <string name="bluePokemon">Pokemon of the Blue player.</string>
+
+    <string name="redAtkOne">First attack of the Red Pokemon.</string>
+    <string name="redAtkTwo">Second attack of the Red Pokemon.</string>
+    <string name="redAtkThree">Third attack of the Red Pokemon.</string>
+    <string name="redAtkFour">Fourth attack of the Red Pokemon.</string>
+
+    <string name="blueAtkOne">First attack of the Blue Pokemon.</string>
+    <string name="blueAtkTwo">Second attack of the Blue Pokemon.</string>
+    <string name="blueAtkThree">Third attack of the Blue Pokemon.</string>
+    <string name="blueAtkFour">Fourth attack of the Blue Pokemon.</string>
 
     <!-- Pokemon characteristics -->
     <string-array name="mewtwo">

@@ -2,37 +2,27 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true"
+    style="@style/rootLayout"
     tools:context="com.example.android.pokemonbattlecounter.StartActivity">
 
     <LinearLayout
         android:id="@+id/mainLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        style="@style/mainLayout">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_weight="1"
+            style="@style/topLayout"
             android:background="@drawable/background_battle"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:id="@+id/visualRed"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/redTransparent">
+                style="@style/visualRed">
 
                 <ImageView
                     android:id="@+id/redPokemonImage"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/mewtwo"/>
-
+                    style="@style/mainWrapContent"
+                    android:src="@drawable/mewtwo"
+                    android:contentDescription="@string/redPokemon"/>
 
                 <RelativeLayout
                     style="@style/pokemonInfosContainer">
@@ -51,21 +41,17 @@
                         style="@style/hpTextValue"
                         android:text="106" />
                 </RelativeLayout>
-
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/visualBlue"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/blueTransparent">
+                style="@style/visualBlue">
 
                 <ImageView
                     android:id="@+id/bluePokemonImage"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/sylveon"/>
+                    style="@style/mainWrapContent"
+                    android:src="@drawable/sylveon"
+                    android:contentDescription="@string/bluePokemon"/>
 
                 <RelativeLayout
                     style="@style/pokemonInfosContainer">
@@ -84,7 +70,6 @@
                         android:id="@+id/blueHp"
                         android:text="95" />
                 </RelativeLayout>
-
             </RelativeLayout>
         </LinearLayout>
 
@@ -99,9 +84,10 @@
 
                 <LinearLayout
                     android:id="@+id/redAttackOne"
-                    style="@style/redButton">
+                    style="@style/redButton"
+                    android:contentDescription="@string/redAtkOne">
 
-                    <ImageView
+                <ImageView
                         android:id="@+id/redAtkOneImg"
                         style="@style/attackTypeImage"
                         android:src="@drawable/normal"/>
@@ -114,9 +100,10 @@
 
                 <LinearLayout
                     android:id="@+id/redAttackTwo"
-                    style="@style/redButton">
+                    style="@style/redButton"
+                    android:contentDescription="@string/redAtkTwo">
 
-                    <ImageView
+                <ImageView
                         android:id="@+id/redAtkTwoImg"
                         style="@style/attackTypeImage"
                         android:src="@drawable/normal"/>
@@ -129,9 +116,10 @@
 
                 <LinearLayout
                     android:id="@+id/redAttackThree"
-                    style="@style/redButton">
+                    style="@style/redButton"
+                    android:contentDescription="@string/redAtkThree">
 
-                    <ImageView
+                <ImageView
                         android:id="@+id/redAtkThreeImg"
                         style="@style/attackTypeImage"
                         android:src="@drawable/normal"/>
@@ -144,10 +132,10 @@
 
                 <LinearLayout
                     android:id="@+id/redAttackFour"
-                    style="@style/redButton">
+                    style="@style/redButton"
+                    android:contentDescription="@string/redAtkFour">
 
-
-                    <ImageView
+                <ImageView
                         android:id="@+id/redAtkFourImg"
                         style="@style/attackTypeImage"
                         android:src="@drawable/normal"/>
@@ -157,7 +145,6 @@
                         style="@style/attackNameText"
                         android:text="Attack 4"/>
                 </LinearLayout>
-
             </LinearLayout>
 
             <LinearLayout
@@ -167,9 +154,10 @@
 
                 <LinearLayout
                     android:id="@+id/blueAttackOne"
-                    style="@style/blueButton">
+                    style="@style/blueButton"
+                    android:contentDescription="@string/blueAtkOne">
 
-                    <ImageView
+                <ImageView
                         android:id="@+id/blueAtkOneImg"
                         style="@style/attackTypeImage"
                         android:src="@drawable/normal"/>
@@ -182,9 +170,10 @@
 
                 <LinearLayout
                     android:id="@+id/blueAttackTwo"
-                    style="@style/blueButton">
+                    style="@style/blueButton"
+                    android:contentDescription="@string/blueAtkTwo">
 
-                    <ImageView
+                <ImageView
                         android:id="@+id/blueAtkTwoImg"
                         style="@style/attackTypeImage"
                         android:src="@drawable/normal"/>
@@ -197,9 +186,10 @@
 
                 <LinearLayout
                     android:id="@+id/blueAttackThree"
-                    style="@style/blueButton">
+                    style="@style/blueButton"
+                    android:contentDescription="@string/blueAtkThree">
 
-                    <ImageView
+                <ImageView
                         android:id="@+id/blueAtkThreeImg"
                         style="@style/attackTypeImage"
                         android:src="@drawable/normal"/>
@@ -212,9 +202,10 @@
 
                 <LinearLayout
                     android:id="@+id/blueAttackFour"
-                    style="@style/blueButton">
+                    style="@style/blueButton"
+                    android:contentDescription="@string/blueAtkFour">
 
-                    <ImageView
+                <ImageView
                         android:id="@+id/blueAtkFourImg"
                         style="@style/attackTypeImage"
                         android:src="@drawable/normal"/>

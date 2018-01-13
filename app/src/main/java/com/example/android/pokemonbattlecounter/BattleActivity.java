@@ -147,6 +147,11 @@ public class BattleActivity extends AppCompatActivity implements View.OnClickLis
 
     }
 
+    /**
+     * This method calls the attack method with the parameters corresponding
+     * to the clicked button.
+     * @param view
+     */
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -159,17 +164,20 @@ public class BattleActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.redAttackTwo: {
                 if(redTurn) {
                     attack(redPokemon, bluePokemon, 2);
-                }                break;
+                }
+                break;
             }
             case R.id.redAttackThree: {
                 if(redTurn) {
                     attack(redPokemon, bluePokemon, 3);
-                }                break;
+                }
+                break;
             }
             case R.id.redAttackFour: {
                 if(redTurn) {
                     attack(redPokemon, bluePokemon, 4);
-                }                break;
+                }
+                break;
             }
             case R.id.blueAttackOne: {
                 if(blueTurn) {
@@ -180,17 +188,20 @@ public class BattleActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.blueAttackTwo: {
                 if(blueTurn) {
                     attack(bluePokemon, redPokemon, 2);
-                }                break;
+                }
+                break;
             }
             case R.id.blueAttackThree: {
                 if(blueTurn) {
                     attack(bluePokemon, redPokemon, 3);
-                }                break;
+                }
+                break;
             }
             case R.id.blueAttackFour: {
                 if(blueTurn) {
                     attack(bluePokemon, redPokemon, 4);
-                }                break;
+                }
+                break;
             }
         }
     }
@@ -215,7 +226,7 @@ public class BattleActivity extends AppCompatActivity implements View.OnClickLis
         int defenseValue = Integer.parseInt(defender[4]);
 
         //Initialization of the attack used.
-        String attackType = "normal";
+        String attackType = getString(R.string.normal);
         int attackPower = 0;
 
         //The type and power of the attack depends on the clicked button.
@@ -233,13 +244,15 @@ public class BattleActivity extends AppCompatActivity implements View.OnClickLis
             attackPower =Integer.parseInt(attacker[16]);
         }
 
+        //Sets the different multipliers used in the calculation of the damages.
         double stab = checkStab(attackerType, attackType);
         double weakness = checkWeakness(defenderType, attackType);
         double critical = criticalHit();
+        double randomValue = setRandomValue();
 
         //Calcul of the amount of damages.
         int hpLost = (int) Math.round(((((50 * 2 / 5 + 2) * attackValue * attackPower) / (defenseValue * 50)) + 2)
-                * stab * weakness * critical);
+                * stab * weakness * critical * randomValue);
 
         //Actions if the Red Pokemon attacks.
         if(attacker == redPokemon) {
@@ -256,7 +269,6 @@ public class BattleActivity extends AppCompatActivity implements View.OnClickLis
         //Actions if the Blue Pokemon attacks.
         } else if(attacker == bluePokemon){
             hpRedPokemon -= hpLost;
-            hpBluePokemon -= hpLost;
             if(hpRedPokemon < 0) {
                 hpRedPokemon = 0;
             }
@@ -293,10 +305,13 @@ public class BattleActivity extends AppCompatActivity implements View.OnClickLis
                     }
                 });
 
+        //Alert dialog if Blue wins.
         if(hpRedPokemon == 0) {
             dialog.setMessage(getString(R.string.congratulations) + redPokemon[0] + getString(R.string.blueWon));
             AlertDialog alert = dialog.create();
             alert.show();
+
+        //Alert dialog if Red wins.
         }else if(hpBluePokemon == 0) {
             dialog.setMessage(getString(R.string.congratulations) + bluePokemon[0] + getString(R.string.redWon));
             AlertDialog alert = dialog.create();
@@ -329,37 +344,38 @@ public class BattleActivity extends AppCompatActivity implements View.OnClickLis
         double weakness = 1;
 
         //Psychic weakness.
-        if(defenderType.equals("Psychic")) {
-            if(attackType.equals("Ghost") || attackType.equals("Dark")) {
+        if(defenderType.equals(getString(R.string.psychic))) {
+            if(attackType.equals(getString(R.string.ghost)) || attackType.equals(getString(R.string.dark))) {
                 weakness = 2;
-            } else if(attackType.equals("Fight") || attackType.equals("Psychic")) {
+            } else if(attackType.equals(getString(R.string.fight)) || attackType.equals(getString(R.string.psychic))) {
                 weakness = 0.5;
             }
         }
 
         //Dark weakness.
-        if(defenderType.equals("Dark")) {
-            if(attackType.equals("Fight")) {
+        if(defenderType.equals(getString(R.string.dark))) {
+            if(attackType.equals(getString(R.string.fight))) {
                 weakness = 2;
-            } else if(attackType.equals("Ghost") || attackType.equals("Dark")) {
+            } else if(attackType.equals(getString(R.string.ghost)) || attackType.equals(getString(R.string.dark))) {
                 weakness = 0.5;
-            } else if(attackType.equals("Psychic")) {
+            } else if(attackType.equals(getString(R.string.psychic))) {
                 weakness = 0;
             }
         }
         //Fairy weakness.
-        if(defenderType.equals("Fairy")) {
-            if(attackType.equals("Poison") || attackType.equals("Steel")) {
+        if(defenderType.equals(getString(R.string.fairy))) {
+            if(attackType.equals(getString(R.string.poison)) || attackType.equals(getString(R.string.steel))) {
                 weakness = 2;
-            } else if(attackType.equals("Fight") || attackType.equals("Dark")) {
+            } else if(attackType.equals(getString(R.string.fight)) || attackType.equals(getString(R.string.dark))) {
                 weakness = 0.5;
             }
         }
         //Poison weakness.
-        if(defenderType.equals("Poison")) {
-            if(attackType.equals("Psychic")) {
+        if(defenderType.equals(getString(R.string.poison))) {
+            if(attackType.equals(getString(R.string.psychic))) {
                 weakness = 2;
-            } else if(attackType.equals("Poison") || attackType.equals("Fight") || attackType.equals("Fairy")) {
+            } else if(attackType.equals(getString(R.string.poison)) || attackType.equals(getString(R.string.fight))
+                    || attackType.equals(getString(R.string.fairy))) {
                 weakness = 0.5;
             }
         }
@@ -381,5 +397,16 @@ public class BattleActivity extends AppCompatActivity implements View.OnClickLis
         }
 
         return critical;
+    }
+
+    /**
+     * Every attack has a part of randomness.
+     * This method returns a multiplier from 0.8 to 1.
+     * @return
+     */
+    public double  setRandomValue(){
+        Random random = new Random();
+        double randomValue = (double) (random.nextInt(101 - 80) + 80) / 100;
+        return randomValue;
     }
 }

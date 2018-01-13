@@ -51,6 +51,11 @@ public class StartActivity extends AppCompatActivity  implements View.OnClickLis
         teamBlueSelected = false;
     }
 
+    /**
+     * This method calls the other methods with the parameters corresponding
+     * to the clicked button.
+     * @param view
+     */
     @Override
     public void onClick(View view){
         switch(view.getId()){

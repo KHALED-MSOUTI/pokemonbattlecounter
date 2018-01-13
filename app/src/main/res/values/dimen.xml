@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main dimensions -->
+    <dimen name="mainPadding">5dp</dimen>
+    <dimen name="mainMargin">5dp</dimen>
+    <dimen name="regularMargin">10dp</dimen>
+    <dimen name="biggerMargin">20dp</dimen>
+
+    <!-- Layouts -->
+    <dimen name="topLayout">120dp</dimen>
+    <dimen name="infoContainer">100dp</dimen>
+    <dimen name="infContainerHeight">60dp</dimen>
+    <dimen name="infoContainerHp">30dp</dimen>
+    <dimen name="infoContainerValue">70dp</dimen>
+
+    <!-- Images -->
+    <dimen name="pokeball">80dp</dimen>
+    <dimen name="pokemonFace">60dp</dimen>
+    <dimen name="atkTypeImgWidth">50dp</dimen>
+    <dimen name="atkTypeImgHeight">30dp</dimen>
+
+    <!-- Texts -->
+    <dimen name="mainText">20sp</dimen>
+    <dimen name="smallerText">15sp</dimen>
+
+</resources>

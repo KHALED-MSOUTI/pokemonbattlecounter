@@ -2,22 +2,16 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true"
+    style="@style/rootLayout"
     tools:context="com.example.android.pokemonbattlecounter.StartActivity">
 
     <LinearLayout
         android:id="@+id/mainLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        style="@style/mainLayout">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:background="@drawable/background"
-            android:layout_weight="1">
+            style="@style/topLayout"
+            android:background="@drawable/background">
 
             <ImageView
                 style="@style/pokeball"
@@ -30,7 +24,8 @@
             <Button
                 android:id="@+id/startBattle"
                 style="@style/figthButton"
-                android:text="@string/fight"/>
+                android:text="@string/letsFight"
+                android:contentDescription="@string/startButton"/>
         </RelativeLayout>
 
         <LinearLayout
@@ -44,8 +39,8 @@
 
                 <LinearLayout
                     android:id="@+id/mewtwoRed"
-                    style="@style/redButton">
-
+                    style="@style/redButton"
+                    android:contentDescription="@string/redMewtwo">
 
                     <ImageView
                         style="@style/pokemonContainerImage"
@@ -58,8 +53,8 @@
 
                 <LinearLayout
                     android:id="@+id/zoroarkRed"
-                    style="@style/redButton">
-
+                    style="@style/redButton"
+                    android:contentDescription="@string/redZoroark">
 
                     <ImageView
                         style="@style/pokemonContainerImage"
@@ -72,8 +67,8 @@
 
                 <LinearLayout
                     android:id="@+id/sylveonRed"
-                    style="@style/redButton">
-
+                    style="@style/redButton"
+                    android:contentDescription="@string/redSylveon">
 
                     <ImageView
                         style="@style/pokemonContainerImage"
@@ -86,8 +81,8 @@
 
                 <LinearLayout
                     android:id="@+id/gengarRed"
-                    style="@style/redButton">
-
+                    style="@style/redButton"
+                    android:contentDescription="@string/redGengar">
 
                     <ImageView
                         style="@style/pokemonContainerImage"
@@ -107,8 +102,8 @@
 
                 <LinearLayout
                     android:id="@+id/mewtwoBlue"
-                    style="@style/blueButton">
-
+                    style="@style/blueButton"
+                    android:contentDescription="@string/blueMewtwo">
 
                     <ImageView
                         style="@style/pokemonContainerImage"
@@ -121,8 +116,8 @@
 
                 <LinearLayout
                     android:id="@+id/zoroarkBlue"
-                    style="@style/blueButton">
-
+                    style="@style/blueButton"
+                    android:contentDescription="@string/blueZoroark">
 
                     <ImageView
                         style="@style/pokemonContainerImage"
@@ -135,8 +130,8 @@
 
                 <LinearLayout
                     android:id="@+id/sylveonBlue"
-                    style="@style/blueButton">
-
+                    style="@style/blueButton"
+                    android:contentDescription="@string/blueSylveon">
 
                     <ImageView
                         style="@style/pokemonContainerImage"
@@ -149,8 +144,8 @@
 
                 <LinearLayout
                     android:id="@+id/gengarBlue"
-                    style="@style/blueButton">
-
+                    style="@style/blueButton"
+                    android:contentDescription="@string/blueGengar">
 
                     <ImageView
                         style="@style/pokemonContainerImage"
