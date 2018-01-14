@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">Pokemon Battle Counter</string>
+    <string name="app_name" translatable="false">Pokemon Battle Counter</string>
 
     <string name="choosePokemon">Every player choose a Pokémon\nto start the battle !</string>
     <string name="startWarning">Every player should select a Pokemon to start the battle</string>
@@ -12,34 +12,101 @@
     <string name="immunity">It doesn\'t affect!\n</string>
     <string name="resistance">It is not very effective…\n</string>
     <string name="weakness">It\'s super effective!\n</string>
-    <string name="inflicted">&#160;inflicted&#160;</string>
-    <string name="damages">&#160;damages to&#160;</string>
+    <string name="inflicted"> %1$s inflicted %2$d damages to %3$s</string>
 
     <string name="back">Back to Pokemons selection</string>
-    <string name="congratulations">Congratulations!\n</string>
-    <string name="redWon">&#160;is defeated. \n Red won the battle!</string>
-    <string name="blueWon">&#160;is defeated. \n Blue won the battle!</string>
+    <string name="congratulations">Congratulations!\n %1$s is defeated.\n %2$s won the battle!</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+
+    <!-- Pokemons -->
+    <string name="mewtwo">Mewtwo</string>
+    <string name="zoroark">Zoroark</string>
+    <string name="sylveon">Sylveon</string>
+    <string name="gengar">Gengar</string>
+    <string name="ninetales">Ninetales</string>
+    <string name="mimikyu">Mimikyu</string>
+    <string name="gyarados">Gyarados</string>
+    <string name="charizard">Charizard</string>
+    <string name="ampharos">Ampharos</string>
+    <string name="sceptile">Sceptile</string>
 
     <!-- Types -->
-    <string name="psychic">Psychic</string>
+    <string name="bug">Bug</string>
     <string name="dark">Dark</string>
+    <string name="dragon">Dragon</string>
+    <string name="electric">Electric</string>
     <string name="fairy">Fairy</string>
-    <string name="poison">Poison</string>
-    <string name="normal">Normal</string>
     <string name="fight">Fight</string>
-    <string name="steel">Steel</string>
+    <string name="fire">Fire</string>
+    <string name="flying">Flying</string>
     <string name="ghost">Ghost</string>
+    <string name="grass">Grass</string>
+    <string name="ground">Ground</string>
+    <string name="ice">Ice</string>
+    <string name="normal">Normal</string>
+    <string name="poison">Poison</string>
+    <string name="psychic">Psychic</string>
+    <string name="rock">Rock</string>
+    <string name="steel">Steel</string>
+    <string name="water">Water</string>
+
+    <!-- Attacks -->
+    <string name="psycho">Psycho</string>
+    <string name="shadowball">Shadow Ball</string>
+    <string name="aurasphere">Aura Sphere</string>
+    <string name="irontail">Iron Tail</string>
+    <string name="darkpulse">Dark Pulse</string>
+    <string name="frustration">Frustration</string>
+    <string name="extrasensory">Extrasensory</string>
+    <string name="moonblast">Moonblast</string>
+    <string name="returnAtk">Return</string> <!-- Can't use keyword "return" -->
+    <string name="psyshock">Psyshock</string>
+    <string name="sludgebomb">Sludge Bomb</string>
+    <string name="focusblast">Focus Blast</string>
+    <string name="icebeam">Ice Beam</string>
+    <string name="dazzling">Dazzling</string>
+    <string name="heatwave">Heat Wave</string>
+    <string name="shadowclaw">Shadow Claw</string>
+    <string name="playrough">Play Rough</string>
+    <string name="gigadrain">Giga Drain</string>
+    <string name="aquatail">Aqua Tail</string>
+    <string name="crunch">Crunch</string>
+    <string name="thunderbolt">Thunderbolt</string>
+    <string name="earthquake">Earthquake</string>
+    <string name="flamethrower">Flamethrower</string>
+    <string name="rockslide">Rock Slide</string>
+    <string name="discharge">Discharge</string>
+    <string name="powergem">Power Gem</string>
+    <string name="signalbeam">Signal Beam</string>
+    <string name="dragonpulse">Dargon Pulse</string>
+    <string name="leafblade">Leaf Blade</string>
+    <string name="xscissor">X-scissor</string>
+    <string name="nightslash">Night Slash</string>
+    <string name="dualchop">Dual Chop</string>
 
     <!-- Content description -->
     <string name="redMewtwo">Button to choose Mewtwo for the Red player.</string>
     <string name="redZoroark">Button to choose Zoroark for the Red player.</string>
     <string name="redSylveon">Button to choose Sylveon for the Red player.</string>
     <string name="redGengar">Button to choose Gengar for the Red player.</string>
+    <string name="redNinetales">Button to choose Ninetales for the Red player.</string>
+    <string name="redMimikyu">Button to choose Mimikyu for the Red player.</string>
+    <string name="redGyarados">Button to choose Gyarados for the Red player.</string>
+    <string name="redCharizard">Button to choose Charizard for the Red player.</string>
+    <string name="redAmpharos">Button to choose Ampharos for the Red player.</string>
+    <string name="redSceptile">Button to choose Sceptile for the Red player.</string>
 
     <string name="blueMewtwo">Button to choose Mewtwo for the Blue player.</string>
     <string name="blueZoroark">Button to choose Zoroark for the Blue player.</string>
     <string name="blueSylveon">Button to choose Sylveon for the Blue player.</string>
     <string name="blueGengar">Button to choose Gengar for the Blue player.</string>
+    <string name="blueNinetales">Button to choose Ninetales for the Blue player.</string>
+    <string name="blueMimikyu">Button to choose Mimikyu for the Blue player.</string>
+    <string name="blueGyarados">Button to choose Gyarados for the Blue player.</string>
+    <string name="blueCharizard">Button to choose Charizard for the Blue player.</string>
+    <string name="blueAmpharos">Button to choose Ampharos for the Blue player.</string>
+    <string name="blueSceptile">Button to choose Sceptile for the Blue player.</string>
 
     <string name="startButton">Button to start the battle. Every player must have selected a Pokemon.</string>
 
@@ -55,105 +122,4 @@
     <string name="blueAtkTwo">Second attack of the Blue Pokemon.</string>
     <string name="blueAtkThree">Third attack of the Blue Pokemon.</string>
     <string name="blueAtkFour">Fourth attack of the Blue Pokemon.</string>
-
-    <!-- Pokemon characteristics -->
-    <string-array name="mewtwo">
-        <!-- Stats -->
-        <item>Mewtwo</item> <!-- Name -->
-        <item>Psychic</item> <!-- Type -->
-        <item>106</item> <!-- HP -->
-        <item>154</item> <!-- (Special) Attack -->
-        <item>90</item> <!-- (Special) Defense -->
-        <!-- First Attack -->
-        <item>Psyko</item> <!-- Attack name -->
-        <item>Psychic</item> <!-- Type -->
-        <item>90</item> <!-- Power -->
-        <!-- Second Attack -->
-        <item>Shadow Ball</item>
-        <item>Ghost</item>
-        <item>80</item>
-        <!-- Third Attack -->
-        <item>Aura Sphere</item>
-        <item>Fight</item>
-        <item>80</item>
-        <!-- Fourth Attack -->
-        <item>Iron Tail</item>
-        <item>Steel</item>
-        <item>100</item>
-    </string-array>
-
-    <string-array name="zoroark">
-        <!-- Stats -->
-        <item>Zoroark</item>
-        <item>Dark</item>
-        <item>120</item> <!--Too weak so I multiplied it's HP by 2-->
-        <item>120</item>
-        <item>60</item>
-        <!-- First Attack -->
-        <item>Dark Pulse</item>
-        <item>Dark</item>
-        <item>80</item>
-        <!-- Second Attack -->
-        <item>Shadow Ball</item>
-        <item>Ghost</item>
-        <item>80</item>
-        <!-- Third Attack -->
-        <item>Frustration</item>
-        <item>Normal</item>
-        <item>100</item>
-        <!-- Fourth Attack -->
-        <item>Extrasensory</item>
-        <item>Psychic</item>
-        <item>80</item>
-    </string-array>
-
-    <string-array name="sylveon">
-        <!-- Stats -->
-        <item>Sylveon</item>
-        <item>Fairy</item>
-        <item>95</item>
-        <item>110</item>
-        <item>130</item>
-        <!-- First Attack -->
-        <item>Moonblast</item>
-        <item>Fairy</item>
-        <item>95</item>
-        <!-- Second Attack -->
-        <item>Return</item>
-        <item>Normal</item>
-        <item>100</item>
-        <!-- Third Attack -->
-        <item>Psyshock</item>
-        <item>Psychic</item>
-        <item>80</item>
-        <!-- Fourth Attack -->
-        <item>Shadow Ball</item>
-        <item>Ghost</item>
-        <item>80</item>
-    </string-array>
-
-    <string-array name="gengar">
-        <!-- Stats -->
-        <item>Gengar</item>
-        <item>Poison</item>
-        <item>100</item> <!-- Added 40 HP -->
-        <item>130</item>
-        <item>75</item>
-        <!-- First Attack -->
-        <item>Shadow Ball</item>
-        <item>Ghost</item>
-        <item>80</item>
-        <!-- Second Attack -->
-        <item>Sludge Bomb</item>
-        <item>Poison</item>
-        <item>90</item>
-        <!-- Third Attack -->
-        <item>Focus Blast</item>
-        <item>Fight</item>
-        <item>120</item>
-        <!-- Fourth Attack -->
-        <item>Dark Pulse</item>
-        <item>Dark</item>
-        <item>80</item>
-    </string-array>
 </resources>

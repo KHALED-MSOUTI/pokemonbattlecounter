@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Pokemon characteristics -->
+    <string-array name="mewtwo">
+        <!-- Stats -->
+        <item>@string/mewtwo</item> <!-- Name -->
+        <item>@string/psychic</item> <!-- Type -->
+        <item>106</item> <!-- HP -->
+        <item>154</item> <!-- (Special) Attack -->
+        <item>90</item> <!-- (Special) Defense -->
+        <!-- First Attack -->
+        <item>@string/psycho</item> <!-- Attack name -->
+        <item>@string/psychic</item> <!-- Type -->
+        <item>90</item> <!-- Power -->
+        <!-- Second Attack -->
+        <item>@string/shadowball</item>
+        <item>@string/ghost</item>
+        <item>80</item>
+        <!-- Third Attack -->
+        <item>@string/aurasphere</item>
+        <item>@string/fight</item>
+        <item>80</item>
+        <!-- Fourth Attack -->
+        <item>@string/irontail</item>
+        <item>@string/steel</item>
+        <item>100</item>
+        <!-- Picture -->
+        <item>"@drawable/mewtwo"</item>
+    </string-array>
+
+    <string-array name="zoroark">
+        <!-- Stats -->
+        <item>@string/zoroark</item>
+        <item>@string/dark</item>
+        <item>120</item> <!-- Added 60 HP -->
+        <item>120</item>
+        <item>60</item>
+        <!-- First Attack -->
+        <item>@string/darkpulse</item>
+        <item>@string/dark</item>
+        <item>80</item>
+        <!-- Second Attack -->
+        <item>@string/shadowball</item>
+        <item>@string/ghost</item>
+        <item>80</item>
+        <!-- Third Attack -->
+        <item>@string/frustration</item>
+        <item>@string/normal</item>
+        <item>100</item>
+        <!-- Fourth Attack -->
+        <item>@string/extrasensory</item>
+        <item>@string/psychic</item>
+        <item>80</item>
+        <!-- Picture -->
+        <item>"@drawable/zoroark"</item>
+    </string-array>
+
+    <string-array name="sylveon">
+        <!-- Stats -->
+        <item>@string/sylveon</item>
+        <item>@string/fairy</item>
+        <item>95</item>
+        <item>110</item>
+        <item>130</item>
+        <!-- First Attack -->
+        <item>@string/moonblast</item>
+        <item>@string/fairy</item>
+        <item>95</item>
+        <!-- Second Attack -->
+        <item>@string/returnAtk</item>
+        <item>@string/normal</item>
+        <item>100</item>
+        <!-- Third Attack -->
+        <item>@string/psyshock</item>
+        <item>@string/psychic</item>
+        <item>80</item>
+        <!-- Fourth Attack -->
+        <item>@string/shadowball</item>
+        <item>@string/ghost</item>
+        <item>80</item>
+        <!-- Picture -->
+        <item>"@drawable/sylveon"</item>
+    </string-array>
+
+    <string-array name="gengar">
+        <!-- Stats -->
+        <item>@string/gengar</item>
+        <item>@string/poison</item>
+        <item>100</item> <!-- Added 40 HP -->
+        <item>130</item>
+        <item>75</item>
+        <!-- First Attack -->
+        <item>@string/shadowball</item>
+        <item>@string/ghost</item>
+        <item>80</item>
+        <!-- Second Attack -->
+        <item>@string/sludgebomb</item>
+        <item>@string/poison</item>
+        <item>90</item>
+        <!-- Third Attack -->
+        <item>@string/focusblast</item>
+        <item>@string/fight</item>
+        <item>120</item>
+        <!-- Fourth Attack -->
+        <item>@string/darkpulse</item>
+        <item>@string/dark</item>
+        <item>80</item>
+        <!-- Picture -->
+        <item>"@drawable/gengar"</item>
+    </string-array>
+
+    <string-array name="ninetalesAlola">
+        <!-- Stats -->
+        <item>@string/ninetales</item>
+        <item>@string/ice</item>
+        <item>93</item> <!-- Added 20 HP -->
+        <item>81</item>
+        <item>100</item>
+        <!-- First Attack -->
+        <item>@string/icebeam</item>
+        <item>@string/ice</item>
+        <item>90</item>
+        <!-- Second Attack -->
+        <item>@string/dazzling</item>
+        <item>@string/fairy</item>
+        <item>80</item>
+        <!-- Third Attack -->
+        <item>@string/irontail</item>
+        <item>@string/steel</item>
+        <item>100</item>
+        <!-- Fourth Attack -->
+        <item>@string/heatwave</item>
+        <item>@string/fire</item>
+        <item>95</item>
+        <!-- Picture -->
+        <item>"@drawable/ninetales_alola"</item>
+    </string-array>
+
+    <string-array name="mimikyu">
+        <!-- Stats -->
+        <item>@string/mimikyu</item>
+        <item>@string/ghost</item>
+        <item>100</item> <!-- Added 45 HP -->
+        <item>90</item> <!-- Physical -->
+        <item>80</item> <!-- Physical -->
+        <!-- First Attack -->
+        <item>@string/shadowclaw</item>
+        <item>@string/ghost</item>
+        <item>70</item>
+        <!-- Second Attack -->
+        <item>@string/playrough</item>
+        <item>@string/fairy</item>
+        <item>90</item>
+        <!-- Third Attack -->
+        <item>@string/darkpulse</item>
+        <item>@string/dark</item>
+        <item>80</item>
+        <!-- Fourth Attack -->
+        <item>@string/gigadrain</item>
+        <item>@string/grass</item>
+        <item>75</item>
+        <!-- Picture -->
+        <item>"@drawable/mimikyu"</item>
+    </string-array>
+
+    <string-array name="gyarados">
+        <!-- Stats -->
+        <item>@string/gyarados</item>
+        <item>@string/water</item>
+        <item>95</item>
+        <item>125</item> <!-- Physical -->
+        <item>79</item> <!-- Physical -->
+        <!-- First Attack -->
+        <item>@string/aquatail</item>
+        <item>@string/water</item>
+        <item>90</item>
+        <!-- Second Attack -->
+        <item>@string/crunch</item>
+        <item>@string/dark</item>
+        <item>80</item>
+        <!-- Third Attack -->
+        <item>@string/thunderbolt</item>
+        <item>@string/electric</item>
+        <item>120</item>
+        <!-- Fourth Attack -->
+        <item>@string/earthquake</item>
+        <item>@string/ground</item>
+        <item>100</item>
+        <!-- Picture -->
+        <item>"@drawable/gyarados"</item>
+    </string-array>
+
+    <string-array name="charizard">
+        <!-- Stats -->
+        <item>@string/charizard</item>
+        <item>@string/fire</item>
+        <item>108</item> <!-- Added 30 HP -->
+        <item>109</item>
+        <item>85</item>
+        <!-- First Attack -->
+        <item>@string/flamethrower</item>
+        <item>@string/fire</item>
+        <item>90</item>
+        <!-- Second Attack -->
+        <item>@string/rockslide</item>
+        <item>@string/rock</item>
+        <item>75</item>
+        <!-- Third Attack -->
+        <item>@string/focusblast</item>
+        <item>@string/fight</item>
+        <item>120</item>
+        <!-- Fourth Attack -->
+        <item>@string/earthquake</item>
+        <item>@string/ground</item>
+        <item>100</item>
+        <!-- Picture -->
+        <item>"@drawable/charizard"</item>
+    </string-array>
+
+    <string-array name="ampharos">
+        <!-- Stats -->
+        <item>@string/ampharos</item>
+        <item>@string/electric</item>
+        <item>90</item>
+        <item>115</item>
+        <item>90</item>
+        <!-- First Attack -->
+        <item>@string/discharge</item>
+        <item>@string/electric</item>
+        <item>80</item>
+        <!-- Second Attack -->
+        <item>@string/powergem</item>
+        <item>@string/ground</item>
+        <item>80</item>
+        <!-- Third Attack -->
+        <item>@string/signalbeam</item>
+        <item>@string/bug</item>
+        <item>75</item>
+        <!-- Fourth Attack -->
+        <item>@string/dragonpulse</item>
+        <item>@string/dragon</item>
+        <item>85</item>
+        <!-- Picture -->
+        <item>"@drawable/ampharos"</item>
+    </string-array>
+
+    <string-array name="sceptile">
+        <!-- Stats -->
+        <item>@string/sceptile</item>
+        <item>@string/grass</item>
+        <item>100</item> <!-- Added 30 HP -->
+        <item>105</item>
+        <item>85</item>
+        <!-- First Attack -->
+        <item>@string/leafblade</item>
+        <item>@string/grass</item>
+        <item>90</item>
+        <!-- Second Attack -->
+        <item>@string/xscissor</item>
+        <item>@string/bug</item>
+        <item>80</item>
+        <!-- Third Attack -->
+        <item>@string/nightslash</item>
+        <item>@string/dark</item>
+        <item>70</item>
+        <!-- Fourth Attack -->
+        <item>@string/dualchop</item>
+        <item>@string/dragon</item>
+        <item>80</item> <!--Note : In the original game, deals 2 times 40 damages -->
+        <!-- Picture -->
+        <item>"@drawable/sceptile"</item>
+    </string-array>
+</resources>

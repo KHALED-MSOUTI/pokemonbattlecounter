@@ -27,19 +27,22 @@
 
     <style name="teamsContainer">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">@dimen/teamsContainer</item>
         <item name="android:orientation">horizontal</item>
     </style>
 
     <style name="teamContainer">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
         <item name="android:padding">@dimen/mainPadding</item>
         <item name="android:layout_weight">1</item>
     </style>
 
-    <style name="buttonParent" parent="teamsContainer">
+    <style name="buttonParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button</item>
+        <item name="android:orientation">horizontal</item>
         <item name="android:layout_margin">@dimen/mainMargin</item>
     </style>
 
@@ -75,6 +78,11 @@
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_margin">@dimen/biggerMargin</item>
+    </style>
+
+    <style name="teamContainerScroll" parent="mainWrapContent">
+        <item name="android:fillViewport">true</item>
+        <item name="android:layout_weight">1</item>
     </style>
 
     <style name="pokemonContainerImage">

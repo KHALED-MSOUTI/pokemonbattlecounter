@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pokemon Battle Counter</string>
+
+    <string name="startWarning">Chaque joueur doit sélectionner un Pokémon</string>
+    <string name="choosePokemon">Chaque joueur choisit un Pokémon\npour commencer le combat !</string>
+    <string name="letsFight">Combat !</string>
+
+    <string name="hp">PV</string>
+
+    <string name="critical">Coup critique !\n</string>
+    <string name="immunity">Ca n\'a aucun effet !\n</string>
+    <string name="resistance">Ce n\'est pas très efficace…\n</string>
+    <string name="weakness">C\'est super efficace !\n</string>
+    <string name="inflicted"> %1$s a infligé %2$d dégâts à %3$s</string>
+
+
+    <string name="back">Retour au menu de sélection</string>
+    <string name="congratulations">Bravo !\n %1$s est battu.\n %2$s a gagné le combat !</string>
+    <string name="red">Rouge</string>
+    <string name="blue">Bleu</string>
+
+    <!-- Pokémons -->
+    <string name="mewtwo">Mewtwo</string>
+    <string name="zoroark">Zoroark</string>
+    <string name="sylveon">Nymphali</string>
+    <string name="gengar">Ectoplasma</string>
+    <string name="ninetales">Feunard</string>
+    <string name="mimikyu">Mimiqui</string>
+    <string name="gyarados">Léviator</string>
+    <string name="charizard">Dracaufeu</string>
+    <string name="ampharos">Pharamp</string>
+    <string name="sceptile">Jungko</string>
+
+    <!-- Types >
+    <string name="bug">Insecte</string>
+    <string name="dark">Ténèbres</string>
+    <string name="dragon">Dragon</string>
+    <string name="electric">Eletrik</string>
+    <string name="fairy">Fée</string>
+    <string name="fight">Combat</string>
+    <string name="fire">Feu</string>
+    <string name="flying">Vol</string>
+    <string name="ghost">Spectre</string>
+    <string name="grass">Plante</string>
+    <string name="ground">Sol</string>
+    <string name="ice">Glace</string>
+    <string name="normal">Normal</string>
+    <string name="poison">Poison</string>
+    <string name="psychic">Psy</string>
+    <string name="rock">Roche</string>
+    <string name="steel">Acier</string>
+    <string name="water">Eau</string-->
+
+    <!-- Attaques -->
+    <string name="psycho">Psyko</string>
+    <string name="shadowball">Ball\'Ombre</string>
+    <string name="aurasphere">Aurasphère</string>
+    <string name="irontail">Queue de Fer</string>
+    <string name="darkpulse">Vibrobscur</string>
+    <string name="frustration">Frustration</string>
+    <string name="extrasensory">Extrasenseur</string>
+    <string name="moonblast">Pouvoir Lunaire</string>
+    <string name="returnAtk">Retour</string>
+    <string name="psyshock">Choc Psy</string>
+    <string name="sludgebomb">Bomb-Beurk</string>
+    <string name="focusblast">Exploforce</string>
+    <string name="icebeam">Laser Glace</string>
+    <string name="dazzling">Éclat magique</string>
+    <string name="heatwave">Canicule</string>
+    <string name="shadowclaw">Griffe Ombre</string>
+    <string name="playrough">Câlinerie</string>
+    <string name="gigadrain">Giga-Sangsue</string>
+    <string name="aquatail">Hydroqueue</string>
+    <string name="crunch">Mâchouille</string>
+    <string name="thunderbolt">Tonnerre</string>
+    <string name="earthquake">Séisme</string>
+    <string name="flamethrower">Lance-Flammes</string>
+    <string name="rockslide">Éboulement</string>
+    <string name="discharge">Coup d\'Jus</string>
+    <string name="powergem">Rayon Gemme</string>
+    <string name="signalbeam">Rayon Signal</string>
+    <string name="dragonpulse">Dracochoc</string>
+    <string name="leafblade">Lame-Feuille</string>
+    <string name="xscissor">Plaie-Croix</string>
+    <string name="nightslash">Tranche-Nuit</string>
+    <string name="dualchop">Double Baffe</string>
+
+    <!-- Content description -->
+
+</resources>

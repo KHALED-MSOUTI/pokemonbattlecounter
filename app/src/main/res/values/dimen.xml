@@ -9,6 +9,8 @@
 
     <!-- Layouts -->
     <dimen name="topLayout">120dp</dimen>
+    <dimen name="teamsContainer">290dp</dimen>
+    <dimen name="button">60dp</dimen>
     <dimen name="infoContainer">100dp</dimen>
     <dimen name="infContainerHeight">60dp</dimen>
     <dimen name="infoContainerHp">30dp</dimen>

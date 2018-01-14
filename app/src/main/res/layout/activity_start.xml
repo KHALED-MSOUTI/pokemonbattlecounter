@@ -32,130 +32,305 @@
             android:id="@+id/teamsContainer"
             style="@style/teamsContainer">
 
-            <LinearLayout
-                android:id="@+id/teamRedContainer"
-                style="@style/teamContainer"
-                android:background="@color/redLight">
+            <ScrollView
+                style="@style/teamContainerScroll">
 
                 <LinearLayout
-                    android:id="@+id/mewtwoRed"
-                    style="@style/redButton"
-                    android:contentDescription="@string/redMewtwo">
+                    android:id="@+id/teamRedContainer"
+                    style="@style/teamContainer"
+                    android:background="@color/redLight">
 
-                    <ImageView
-                        style="@style/pokemonContainerImage"
-                        android:src="@drawable/tiny_mewtwo"/>
+                    <LinearLayout
+                        android:id="@+id/mewtwoRed"
+                        style="@style/redButton"
+                        android:contentDescription="@string/redMewtwo">
 
-                    <TextView
-                        style="@style/pokemonContainerText"
-                        android:text="Mewtwo"/>
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_mewtwo"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/mewtwo"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/zoroarkRed"
+                        style="@style/redButton"
+                        android:contentDescription="@string/redZoroark">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_zoroark"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/zoroark"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sylveonRed"
+                        style="@style/redButton"
+                        android:contentDescription="@string/redSylveon">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_sylveon"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/sylveon"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/gengarRed"
+                        style="@style/redButton"
+                        android:contentDescription="@string/redGengar">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_gengar"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/gengar"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ninetalesRed"
+                        style="@style/redButton"
+                        android:contentDescription="@string/redNinetales">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_ninetales_alola"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/ninetales"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mimikyuRed"
+                        style="@style/redButton"
+                        android:contentDescription="@string/redMimikyu">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_mimikyu"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/mimikyu"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/gyaradosRed"
+                        style="@style/redButton"
+                        android:contentDescription="@string/redGyarados">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_gyarados"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/gyarados"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/charizardRed"
+                        style="@style/redButton"
+                        android:contentDescription="@string/redCharizard">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_charizard"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/charizard"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ampharosRed"
+                        style="@style/redButton"
+                        android:contentDescription="@string/redAmpharos">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_ampharos"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/ampharos"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sceptileRed"
+                        style="@style/redButton"
+                        android:contentDescription="@string/redSceptile">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_sceptile"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/sceptile"/>
+                    </LinearLayout>
                 </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                style="@style/teamContainerScroll">
 
                 <LinearLayout
-                    android:id="@+id/zoroarkRed"
-                    style="@style/redButton"
-                    android:contentDescription="@string/redZoroark">
+                    android:id="@+id/teamBlueContainer"
+                    style="@style/teamContainer"
+                    android:background="@color/blueLight">
 
-                    <ImageView
-                        style="@style/pokemonContainerImage"
-                        android:src="@drawable/tiny_zoroark"/>
+                    <LinearLayout
+                        android:id="@+id/mewtwoBlue"
+                        style="@style/blueButton"
+                        android:contentDescription="@string/blueMewtwo">
 
-                    <TextView
-                        style="@style/pokemonContainerText"
-                        android:text="Zoroark"/>
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_mewtwo"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="Mewtwo"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/zoroarkBlue"
+                        style="@style/blueButton"
+                        android:contentDescription="@string/blueZoroark">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_zoroark"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="Zoroark"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sylveonBlue"
+                        style="@style/blueButton"
+                        android:contentDescription="@string/blueSylveon">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_sylveon"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="Sylveon"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/gengarBlue"
+                        style="@style/blueButton"
+                        android:contentDescription="@string/blueGengar">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_gengar"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="Gengar"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ninetalesBlue"
+                        style="@style/blueButton"
+                        android:contentDescription="@string/blueNinetales">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_ninetales_alola"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/ninetales"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mimikyuBlue"
+                        style="@style/blueButton"
+                        android:contentDescription="@string/blueMimikyu">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_mimikyu"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/mimikyu"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/gyaradosBlue"
+                        style="@style/blueButton"
+                        android:contentDescription="@string/blueGyarados">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_gyarados"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/gyarados"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/charizardBlue"
+                        style="@style/blueButton"
+                        android:contentDescription="@string/blueCharizard">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_charizard"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/charizard"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ampharosBlue"
+                        style="@style/blueButton"
+                        android:contentDescription="@string/blueAmpharos">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_ampharos"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/ampharos"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sceptileBlue"
+                        style="@style/blueButton"
+                        android:contentDescription="@string/blueSceptile">
+
+                        <ImageView
+                            style="@style/pokemonContainerImage"
+                            android:src="@drawable/tiny_sceptile"/>
+
+                        <TextView
+                            style="@style/pokemonContainerText"
+                            android:text="@string/sceptile"/>
+                    </LinearLayout>
                 </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/sylveonRed"
-                    style="@style/redButton"
-                    android:contentDescription="@string/redSylveon">
-
-                    <ImageView
-                        style="@style/pokemonContainerImage"
-                        android:src="@drawable/tiny_sylveon"/>
-
-                    <TextView
-                        style="@style/pokemonContainerText"
-                        android:text="Sylveon"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/gengarRed"
-                    style="@style/redButton"
-                    android:contentDescription="@string/redGengar">
-
-                    <ImageView
-                        style="@style/pokemonContainerImage"
-                        android:src="@drawable/tiny_gengar"/>
-
-                    <TextView
-                        style="@style/pokemonContainerText"
-                        android:text="Gengar"/>
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/teamBlueContainer"
-                style="@style/teamContainer"
-                android:background="@color/blueLight">
-
-                <LinearLayout
-                    android:id="@+id/mewtwoBlue"
-                    style="@style/blueButton"
-                    android:contentDescription="@string/blueMewtwo">
-
-                    <ImageView
-                        style="@style/pokemonContainerImage"
-                        android:src="@drawable/tiny_mewtwo"/>
-
-                    <TextView
-                        style="@style/pokemonContainerText"
-                        android:text="Mewtwo"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/zoroarkBlue"
-                    style="@style/blueButton"
-                    android:contentDescription="@string/blueZoroark">
-
-                    <ImageView
-                        style="@style/pokemonContainerImage"
-                        android:src="@drawable/tiny_zoroark"/>
-
-                    <TextView
-                        style="@style/pokemonContainerText"
-                        android:text="Zoroark"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/sylveonBlue"
-                    style="@style/blueButton"
-                    android:contentDescription="@string/blueSylveon">
-
-                    <ImageView
-                        style="@style/pokemonContainerImage"
-                        android:src="@drawable/tiny_sylveon"/>
-
-                    <TextView
-                        style="@style/pokemonContainerText"
-                        android:text="Sylveon"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/gengarBlue"
-                    style="@style/blueButton"
-                    android:contentDescription="@string/blueGengar">
-
-                    <ImageView
-                        style="@style/pokemonContainerImage"
-                        android:src="@drawable/tiny_gengar"/>
-
-                    <TextView
-                        style="@style/pokemonContainerText"
-                        android:text="Gengar"/>
-                </LinearLayout>
-            </LinearLayout>
+            </ScrollView>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

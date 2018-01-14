@@ -97,8 +97,8 @@ public class BattleActivity extends AppCompatActivity implements View.OnClickLis
         mBlueAttackThree.setOnClickListener(this);
         mBlueAttackFour.setOnClickListener(this);
 
-        String redPokemonImage = "@drawable/" + redPokemon[0].toLowerCase();
-        String bluePokemonImage = "@drawable/" + bluePokemon[0].toLowerCase();
+        String redPokemonImage = redPokemon[17];
+        String bluePokemonImage = bluePokemon[17];
 
         String redAtkOneImg = "@drawable/" + redPokemon[6].toLowerCase();
         String redAtkTwoImg = "@drawable/" + redPokemon[9].toLowerCase();
@@ -291,7 +291,7 @@ public class BattleActivity extends AppCompatActivity implements View.OnClickLis
         }else if(weakness == 2) {
             message += getString(R.string.weakness);
         }
-        message += attackerName + getString(R.string.inflicted) + String.valueOf(hpLost) + getString(R.string.damages) + defenderName;
+        message += getString(R.string.inflicted, attackerName, hpLost, defenderName);
         Toast toast = Toast.makeText(this, message, Toast.LENGTH_LONG);
         toast.setGravity(Gravity.TOP, 0, 0);
         toast.show();
@@ -307,13 +307,13 @@ public class BattleActivity extends AppCompatActivity implements View.OnClickLis
 
         //Alert dialog if Blue wins.
         if(hpRedPokemon == 0) {
-            dialog.setMessage(getString(R.string.congratulations) + redPokemon[0] + getString(R.string.blueWon));
+            dialog.setMessage(getString(R.string.congratulations, redPokemon[0], getString(R.string.blue)));
             AlertDialog alert = dialog.create();
             alert.show();
 
         //Alert dialog if Red wins.
         }else if(hpBluePokemon == 0) {
-            dialog.setMessage(getString(R.string.congratulations) + bluePokemon[0] + getString(R.string.redWon));
+            dialog.setMessage(getString(R.string.congratulations, bluePokemon[0], getString(R.string.red)));
             AlertDialog alert = dialog.create();
             alert.show();
         }
@@ -343,18 +343,21 @@ public class BattleActivity extends AppCompatActivity implements View.OnClickLis
     public double checkWeakness(String defenderType, String attackType){
         double weakness = 1;
 
-        //Psychic weakness.
-        if(defenderType.equals(getString(R.string.psychic))) {
-            if(attackType.equals(getString(R.string.ghost)) || attackType.equals(getString(R.string.dark))) {
+        //Bug weakness.
+        if(defenderType.equals(getString(R.string.bug))) {
+            if (attackType.equals(getString(R.string.fire)) || attackType.equals(getString(R.string.rock))
+                    || attackType.equals(getString(R.string.flying))) {
                 weakness = 2;
-            } else if(attackType.equals(getString(R.string.fight)) || attackType.equals(getString(R.string.psychic))) {
+            } else if (attackType.equals(getString(R.string.fight)) || attackType.equals(getString(R.string.grass))
+                    || attackType.equals(getString(R.string.ground))) {
                 weakness = 0.5;
             }
         }
 
         //Dark weakness.
         if(defenderType.equals(getString(R.string.dark))) {
-            if(attackType.equals(getString(R.string.fight))) {
+            if(attackType.equals(getString(R.string.fight)) || attackType.equals(getString(R.string.bug))
+            || attackType.equals(getString(R.string.fairy))) {
                 weakness = 2;
             } else if(attackType.equals(getString(R.string.ghost)) || attackType.equals(getString(R.string.dark))) {
                 weakness = 0.5;
@@ -362,20 +365,185 @@ public class BattleActivity extends AppCompatActivity implements View.OnClickLis
                 weakness = 0;
             }
         }
+
+        //Dragon weakness.
+        if(defenderType.equals(getString(R.string.dragon))) {
+            if (attackType.equals(getString(R.string.ice)) || attackType.equals(getString(R.string.dragon))
+                    || attackType.equals(getString(R.string.fairy))) {
+                weakness = 2;
+            } else if (attackType.equals(getString(R.string.grass)) || attackType.equals(getString(R.string.fire))
+                    || attackType.equals(getString(R.string.water)) || attackType.equals(getString(R.string.electric))) {
+                weakness = 0.5;
+            }
+        }
+
+        //Electric weakness.
+        if(defenderType.equals(getString(R.string.electric))) {
+            if (attackType.equals(getString(R.string.ground))) {
+                weakness = 2;
+            } else if (attackType.equals(getString(R.string.flying)) || attackType.equals(getString(R.string.steel))
+                    || attackType.equals(getString(R.string.electric))) {
+                weakness = 0.5;
+            }
+        }
+
         //Fairy weakness.
         if(defenderType.equals(getString(R.string.fairy))) {
             if(attackType.equals(getString(R.string.poison)) || attackType.equals(getString(R.string.steel))) {
                 weakness = 2;
-            } else if(attackType.equals(getString(R.string.fight)) || attackType.equals(getString(R.string.dark))) {
+            } else if(attackType.equals(getString(R.string.fight)) || attackType.equals(getString(R.string.dark))
+                    || attackType.equals((getString(R.string.bug)))) {
+                weakness = 0.5;
+            }else if(attackType.equals(getString(R.string.dragon))) {
+                weakness = 0;
+            }
+        }
+
+        //Fight weakness.
+        if(defenderType.equals(getString(R.string.fight))) {
+            if (attackType.equals(getString(R.string.flying)) || attackType.equals(getString(R.string.fairy))
+                    || attackType.equals(getString(R.string.psychic))) {
+                weakness = 2;
+            } else if (attackType.equals(getString(R.string.bug)) || attackType.equals(getString(R.string.dark))
+                    || attackType.equals(getString(R.string.rock))) {
                 weakness = 0.5;
             }
         }
+
+        //Fire weakness.
+        if(defenderType.equals(getString(R.string.fire))) {
+            if (attackType.equals(getString(R.string.ground)) || attackType.equals(getString(R.string.rock))
+                    || attackType.equals(getString(R.string.water))) {
+                weakness = 2;
+            } else if (attackType.equals(getString(R.string.fire)) || attackType.equals(getString(R.string.bug))
+                    || attackType.equals(getString(R.string.ice)) || attackType.equals(getString(R.string.steel))
+                    || attackType.equals(getString(R.string.grass)) || attackType.equals(getString(R.string.fairy))) {
+                weakness = 0.5;
+            }
+        }
+
+        //Flying weakness.
+        if(defenderType.equals(getString(R.string.flying))) {
+            if (attackType.equals(getString(R.string.ice)) || attackType.equals(getString(R.string.electric))
+                    || attackType.equals(getString(R.string.rock))) {
+                weakness = 2;
+            } else if (attackType.equals(getString(R.string.bug)) || attackType.equals(getString(R.string.grass))
+                    || attackType.equals(getString(R.string.fight))) {
+                weakness = 0.5;
+            } else if (attackType.equals(getString(R.string.ground))) {
+                weakness = 0;
+            }
+        }
+
+        //Ghost weakness.
+        if(defenderType.equals(getString(R.string.ghost))) {
+            if (attackType.equals(getString(R.string.dark)) || attackType.equals(getString(R.string.ghost))) {
+                weakness = 2;
+            } else if (attackType.equals(getString(R.string.bug)) || attackType.equals(getString(R.string.poison))) {
+                weakness = 0.5;
+            } else if (attackType.equals(getString(R.string.fight)) || attackType.equals(getString(R.string.normal))) {
+                weakness = 0;
+            }
+        }
+
+        //Grass weakness.
+        if(defenderType.equals(getString(R.string.grass))) {
+            if (attackType.equals(getString(R.string.bug)) || attackType.equals(getString(R.string.fire))
+                    || attackType.equals(getString(R.string.ice)) || attackType.equals(getString(R.string.flying))
+                    || attackType.equals(getString(R.string.poison))) {
+                weakness = 2;
+            } else if (attackType.equals(getString(R.string.electric)) || attackType.equals(getString(R.string.grass))
+                    || attackType.equals(getString(R.string.ground)) || attackType.equals(getString(R.string.water))) {
+                weakness = 0.5;
+            }
+        }
+
+        //Ground weakness.
+        if(defenderType.equals(getString(R.string.ground))) {
+            if (attackType.equals(getString(R.string.ice)) || attackType.equals(getString(R.string.grass))
+                    || attackType.equals(getString(R.string.water))) {
+                weakness = 2;
+            } else if (attackType.equals(getString(R.string.poison)) || attackType.equals(getString(R.string.rock))) {
+                weakness = 0.5;
+            } else if (attackType.equals(getString(R.string.electric))) {
+                weakness = 0;
+            }
+        }
+
+        //Ice weakness.
+        if(defenderType.equals(getString(R.string.ice))) {
+            if (attackType.equals(getString(R.string.fight)) || attackType.equals(getString(R.string.fire))
+                    || attackType.equals(getString(R.string.steel)) || attackType.equals(getString(R.string.rock))) {
+                weakness = 2;
+            } else if (attackType.equals(getString(R.string.ice))) {
+                weakness = 0.5;
+            }
+        }
+
+        //Normal weakness.
+        if(defenderType.equals(getString(R.string.normal))) {
+            if (attackType.equals(getString(R.string.fight))) {
+                weakness = 2;
+            } else if (attackType.equals(getString(R.string.ghost))) {
+                weakness = 0;
+            }
+        }
+
         //Poison weakness.
         if(defenderType.equals(getString(R.string.poison))) {
-            if(attackType.equals(getString(R.string.psychic))) {
+            if(attackType.equals(getString(R.string.psychic)) || attackType.equals(getString(R.string.ground))) {
                 weakness = 2;
             } else if(attackType.equals(getString(R.string.poison)) || attackType.equals(getString(R.string.fight))
-                    || attackType.equals(getString(R.string.fairy))) {
+                    || attackType.equals(getString(R.string.fairy)) || attackType.equals(getString(R.string.bug))
+                    || attackType.equals(getString(R.string.grass))) {
+                weakness = 0.5;
+            }
+        }
+
+        //Psychic weakness.
+        if(defenderType.equals(getString(R.string.psychic))) {
+            if(attackType.equals(getString(R.string.ghost)) || attackType.equals(getString(R.string.dark))
+                    || attackType.equals(getString(R.string.bug))) {
+                weakness = 2;
+            } else if(attackType.equals(getString(R.string.fight)) || attackType.equals(getString(R.string.psychic))) {
+                weakness = 0.5;
+            }
+        }
+
+        //Rock weakness.
+        if(defenderType.equals(getString(R.string.rock))) {
+            if (attackType.equals(getString(R.string.fight)) || attackType.equals(getString(R.string.grass))
+                    || attackType.equals(getString(R.string.ground)) || attackType.equals(getString(R.string.steel))
+                    || attackType.equals(getString(R.string.water))) {
+                weakness = 2;
+            } else if (attackType.equals(getString(R.string.fire)) || attackType.equals(getString(R.string.normal))
+                    || attackType.equals(getString(R.string.poison)) || attackType.equals(getString(R.string.flying))) {
+                weakness = 0.5;
+            }
+        }
+
+        //Steel weakness.
+        if(defenderType.equals(getString(R.string.steel))) {
+            if (attackType.equals(getString(R.string.fight)) || attackType.equals(getString(R.string.fire))
+                    || attackType.equals(getString(R.string.ground))) {
+                weakness = 2;
+            } else if (attackType.equals(getString(R.string.normal)) || attackType.equals(getString(R.string.steel))
+                    || attackType.equals(getString(R.string.grass)) || attackType.equals(getString(R.string.dragon))
+                    || attackType.equals(getString(R.string.ice)) || attackType.equals(getString(R.string.flying))
+                    || attackType.equals(getString(R.string.rock)) || attackType.equals(getString(R.string.psychic))
+                    || attackType.equals(getString(R.string.bug)) || attackType.equals(getString(R.string.fairy))) {
+                weakness = 0.5;
+            } else if (attackType.equals(getString(R.string.poison))) {
+                weakness = 0;
+            }
+        }
+
+        //Water weakness.
+        if(defenderType.equals(getString(R.string.water))) {
+            if (attackType.equals(getString(R.string.electric)) || attackType.equals(getString(R.string.grass))) {
+                weakness = 2;
+            } else if (attackType.equals(getString(R.string.fire)) || attackType.equals(getString(R.string.ice))
+                    || attackType.equals(getString(R.string.steel)) || attackType.equals(getString(R.string.water))) {
                 weakness = 0.5;
             }
         }
